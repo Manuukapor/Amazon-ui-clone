@@ -2,6 +2,7 @@
   "name": "amazon",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Manuukapor.github.io/Amazon-ui-clone",
   "dependencies": {
     "@eslint/config-array": "^0.18.0",
     "@stripe/react-stripe-js": "^2.8.0",
@@ -28,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +62,7 @@
     "@babel/plugin-transform-unicode-property-regex": "^7.24.7",
     "@svgr/webpack": "^8.1.0",
     "eslint": "^8.57.0",
+    "gh-pages": "^6.1.1",
     "patch-package": "^8.0.0",
     "postcss": "^8.4.41",
     "postinstall-postinstall": "^2.1.0",
